@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container, ListItem, MenuButton } from './nav.css';
+import { Container, MenuButton } from './nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -23,17 +23,17 @@ class Nav extends React.Component {
           <FontAwesomeIcon icon={faBars} color="white" size="lg" />
         </MenuButton>
         <ul className={this.state.isOpen ? 'opened' : undefined}>
-          <ListItem>
+          <li>
             <a href="https://yang2020.com">YANG2020</a>
-          </ListItem>
-          <ListItem>
+          </li>
+          <li>
             <Link to="/submit">Submit</Link>
-          </ListItem>
-          <ListItem>
+          </li>
+          <li>
             <a href="https://secure.actblue.com/donate/friends-of-andrew-yang">
               DONATE
             </a>
-          </ListItem>
+          </li>
         </ul>
       </Container>
     );
