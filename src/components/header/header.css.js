@@ -32,7 +32,7 @@ export const Container = styled.div`
   }
 
   .fullTitle {
-    ${MEDIA.IPAD`
+    ${MEDIA.IPAD_PRO`
       display: none;
     `}
   }
@@ -40,7 +40,7 @@ export const Container = styled.div`
   .shortTitle {
     display: none;
 
-    ${MEDIA.IPAD`
+    ${MEDIA.IPAD_PRO`
       display: block;
     `}
   }
