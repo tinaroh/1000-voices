@@ -39,11 +39,11 @@ export const Container = styled.nav`
 
       &.opened {
         background-color: #3372bc;
-        display: table;
+        display: block;
+        width: 100%;
         position: absolute;
         left: 0;
-        top: 62px;
-        width: 100%;
+        top: 62px; /* height of header */
       }
     `}
   }
@@ -53,6 +53,7 @@ export const MenuButton = styled.span`
   display: none;
 
   ${MEDIA.IPAD`
+    padding-right: 12px;
     display: block;
     float: right;
     text-align: left;
